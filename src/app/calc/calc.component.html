@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <input id="data" type="text" value={{data}} disabled />
+    <button value="AC" (click)="reset()">AC</button>
+  </div>
+  <div class="row">
+    <button value="7" (click)="press('7')">7</button>
+    <button value="8" (click)="press('8')">8</button>
+    <button value="9" (click)="press('9')">9</button>
+    <button id="division" value="/" (click)="press('/')">/</button>
+  </div>
+  <div class="row">
+    <button value="4" (click)="press('4')">4</button>
+    <button value="5" (click)="press('5')">5</button>
+    <button value="6" (click)="press('6')">6</button>
+    <button id="multiplication" value="*" (click)="press('*')">x</button>
+  </div>
+  <div class="row">
+    <button id="button1" value="1" (click)="press('1')">1</button>
+    <button id="button2" value="2" (click)="press('2')">2</button>
+    <button id="button3" value="3" (click)="press('3')">3</button>
+    <button id="subtraction" value="-" (click)="press('-')">-</button>
+  </div>
+  <div class="row">
+    <button value="0" (click)="press('0')">0</button>
+    <button id="dot" value="." (click)="press('.')">.</button>
+    <button id="total" value="=" (click)="press('=')">=</button>
+    <button id="sum" value="+" (click)="press('+')">+</button>
+  </div>
+</div>

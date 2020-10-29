@@ -1,0 +1,42 @@
+$color: #1976d2;
+$color-reset: #f74747;
+
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: $color;
+  margin: 10px;
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+
+    input {
+      width: 100%;
+      margin: 5px 15px 5px 5px;
+      height: 34px;
+      text-align: right;
+      font-size: 20px;
+      background-color: white;
+      color: black;
+
+      & + button {
+        background-color: $color-reset;
+      }
+    }
+
+    button {
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      margin: 5px;
+      font-size: 18px;
+    }
+  }
+}
